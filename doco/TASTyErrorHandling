@@ -1,0 +1,29 @@
+
+I looked through the project an noticed I was running version 2.13 of Scala
+I wanted to change to 3.3.1 as that is my current version
+
+So I downloaded the version 3.3.1 and added as a version in my config
+
+When I went to run a basic program, it came up with a TASTy error
+
+The actually error is:
+class file scala/runtime/$throws$package.class is broken, reading aborted with class dotty.tools.tasty.UnpickleException
+TASTy signature has wrong version.
+ expected: {majorVersion: 28, minorVersion: 0}
+ found   : {majorVersion: 28, minorVersion: 3}
+
+This TASTy file was produced by a more recent, forwards incompatible release.
+To read this TASTy file, please upgrade your tooling.
+The TASTy file was produced by Scala 3.3.1-bin-nonbootstrapped.
+
+Solution:
+To fix this, when into my build.sbt file to change the scalaVersion := "3.0.2" to "3.3.1"
+
+I did try to change project/build.properties my sbt.version from "1.5.5" to "1.6.7"
+I then typed in the terminal:
+    sbt clean
+    sbt compile
+However, wasn't pick up 1.6.7 and threw this error:
+[error] [launcher] could not retrieve sbt 1.6.7
+
+So I fiddled around and changed it back to 1.5.5 and it somehow worked
