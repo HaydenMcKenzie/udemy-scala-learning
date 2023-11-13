@@ -18,4 +18,10 @@ object CBNvsCBV extends App {
 
   calledByValue(r.nextInt())
   calledByName(r.nextInt())
+
+
+  def infinite(): Int = 1 + infinite()
+  def printFirst(x: Int, y: => Int): Unit = println(x)
+
+  printFirst(34, infinite())
 }
