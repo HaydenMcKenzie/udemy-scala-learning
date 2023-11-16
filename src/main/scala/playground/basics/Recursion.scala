@@ -44,8 +44,8 @@ object Recursion extends App {
 
     isPrimeUtil(n / 2, true)
   }
-  println(isPrime(7))
-  println(isPrime(10))
+  //println(isPrime(7))
+  //println(isPrime(10))
 
   // E3: Fibonacci
   def fibonacci(n: Int): Int = {
@@ -57,6 +57,6 @@ object Recursion extends App {
     else fibTailRec(2, 1, 1)
   }
 
-  print(fibonacci(8))
+  //print(fibonacci(8))
 
 }
