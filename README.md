@@ -1,5 +1,5 @@
 
-## I am following RockTheJVM's Beginner and Advanced Scala udemy Courses
+# I am following RockTheJVM's Beginner and Advanced Scala udemy Courses
 
-# Courses
+## Courses
 Coming Soon
