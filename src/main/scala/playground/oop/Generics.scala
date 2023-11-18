@@ -50,6 +50,12 @@ object Generics extends App {
   class Trainer[-A]
   val trainer: Trainer[Cat] = new Trainer[Animal] // can "train" a cat, dog etc
 
+  /**
+   * if B extends A, should List[B] extend List [A]
+   * List[+A]   - yes
+   * List[A]    - no - default
+   * List[-A]   - hello no
+   */
 
   // bounded types
   // subtype syntax   = <:  or lowerbounded
