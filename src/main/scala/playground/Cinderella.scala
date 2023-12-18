@@ -1,5 +1,5 @@
 package playground
 
-class Cinderella {  
+class Cinderella {
   // intentionally empty
 }
