@@ -44,7 +44,7 @@ object WhatsAFunction extends App {
     }
   val adder3 = superAdder(3)
   println(adder3(4))
-  println(superAdder(3) (4)) // curried function
+  println(superAdder(3) (4))
 }
 
 trait myFunction[A, B] {
